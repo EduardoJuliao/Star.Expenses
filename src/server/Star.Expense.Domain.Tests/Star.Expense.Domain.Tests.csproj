@@ -16,4 +16,8 @@
     <ProjectReference Include="..\Star.Expense.Domain\Star.Expense.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Remove="UnitTest1.cs" />
+  </ItemGroup>
+
 </Project>
