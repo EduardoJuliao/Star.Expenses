@@ -45,7 +45,7 @@ namespace Star.Expense.Domain.Tests.ServiceTests
 
             // Act
             _service.CreateTag(newTag);
-g
+
             // Asserts
             Assert.Throws<Exception>(() =>
             {
