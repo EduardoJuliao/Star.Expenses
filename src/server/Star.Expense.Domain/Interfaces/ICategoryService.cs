@@ -5,7 +5,7 @@ namespace Star.Expense.Domain.Interfaces
 {
     public interface ICategoryService
     {
-         void CreateCategory(Category category);
+        void CreateCategory(Category category);
         IEnumerable<Category> GetCategories();
     }
 }
