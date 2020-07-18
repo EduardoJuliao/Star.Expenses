@@ -24,14 +24,14 @@ namespace Star.Expense.Domain.Tests.ServiceTests
             // Arrange
             var newCategory = new Category()
             {
-                Name = "Teste"
+                Name = "Estrela"
             };
 
             // Act
             _service.CreateCategory(newCategory);
 
             // Asserts
-            Assert.IsTrue(_service.GetCategories().First().Name == "Teste");
+            Assert.IsTrue(_service.GetCategories().First().Name == "Estrela");
         }
         
         [Test]
@@ -40,7 +40,7 @@ namespace Star.Expense.Domain.Tests.ServiceTests
             // Arrange
             var newCategory = new Category()
             {
-                Name = "Teste"
+                Name = "Estrela"
             };
 
             // Act
