@@ -8,48 +8,48 @@ using Star.Expense.Domain.Services;
 namespace Star.Expense.Domain.Tests.ServiceTests
 {
     [TestFixture]
-    public class TagServiceTest
+    public class CategoryServiceTest
     {
-        private ITagService _service;
+        private ICategoryService _service;
 
         [SetUp]
         public void SetUp()
         {
-            _service = new TagService();
+            _service = new CategoryService();
         }
 
         [Test]
-        public void CanCreateNewTag()
+        public void CanCreateNewCategory()
         {
             // Arrange
-            var newTag = new Tag()
+            var newCategory = new Category()
             {
-                Name = "Estrela"
+                Name = "Teste"
             };
 
             // Act
-            _service.CreateTag(newTag);
+            _service.CreateCategory(newCategory);
 
             // Asserts
-            Assert.IsTrue(_service.GetTags().First().Name == "Estrela");
+            Assert.IsTrue(_service.GetCategories().First().Name == "Teste");
         }
         
         [Test]
         public void FailWhenAddingSameTagName()
         {
             // Arrange
-            var newTag = new Tag()
+            var newCategory = new Category()
             {
-                Name = "Estrela"
+                Name = "Teste"
             };
 
             // Act
-            _service.CreateTag(newTag);
+            _service.CreateCategory(newCategory);
 
             // Asserts
             Assert.Throws<Exception>(() =>
             {
-                _service.CreateTag(newTag);
+                _service.CreateCategory(newCategory);
             });
         }
     }
