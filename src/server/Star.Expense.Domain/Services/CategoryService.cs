@@ -21,7 +21,6 @@ namespace Star.Expense.Domain.Services
                 throw new Exception("Item already exists.");
             }
         }
-
         public IEnumerable<Category> GetCategories()
         {
             return _tempRepo;
