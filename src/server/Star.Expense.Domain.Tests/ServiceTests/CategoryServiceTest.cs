@@ -35,7 +35,7 @@ namespace Star.Expense.Domain.Tests.ServiceTests
         }
         
         [Test]
-        public void FailWhenAddingSameTagName()
+        public void FailWhenAddingSameCategoryName()
         {
             // Arrange
             var newCategory = new Category()
